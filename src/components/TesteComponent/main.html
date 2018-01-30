@@ -1,0 +1,27 @@
+<div id="teste-component">
+  <button class="btn btn-primary" @click="importGoogleContacts">
+      import google contacts
+  </button>
+  <div v-show="googleContacts">
+    <h2>Imported google contacts</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr v-for="contact in googleContacts">
+                <td>{{ contact.name }}</td>
+                <td>{{ contact.email }}</td>
+            </tr>
+        </tbody>
+     </table>
+     <h5 v-if="googleContacts">
+       <em>
+           <strong>Imported contacts {{ googleContacts.length }}</strong>
+       </em>
+     </h5>
+  </div>
+</div>
