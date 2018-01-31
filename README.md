@@ -2,6 +2,8 @@
 
 > A Vue.js project
 
+Create oauth2.0 credentials: https://console.developers.google.com
+
 ## Build Setup
 
 ``` bash
